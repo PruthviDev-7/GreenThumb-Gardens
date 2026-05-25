@@ -17,21 +17,26 @@ function Home() {
   useGSAP(
     () => {
       const tl = gsap.timeline();
-        tl.from(".Home_left", {
+        // tl.from(".Home_left", {
+        //   opacity: 0,
+        //   x: -100,
+        //   duration: 0.8,
+        // });
+        gsap.from(".Home_Right_imgg img", {
           opacity: 0,
-          x: -100,
-          duration: 0.8,
-        });
-        tl.from(
+          y: 100,
+          scale: 0,
+          duration: 2,
+        },);
+        gsap.from(
           ".Home_Right_info",
           {
             opacity: 0,
-            y: 100,
-            delay: 0.5,
-            duration: 1.5,
+            y: 150,
+            duration: 2,
           },
-          "-=0.4",
-        );
+          
+        );  
     },
     
   );
@@ -79,14 +84,10 @@ function Home() {
         </div>
       </div>
       <div
-        className="Home_Right h-full w-[60%] relative"
-        style={{
-          backgroundImage: `url(${img1})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "0% 70%",
-        }}
-      >
+        className="Home_Right h-full w-[60%] relative">
+          <div className="Home_Right_imgg absolute top-0 right-0 h-full w-[60%]">
+            <img className="h-full w-full object-cover" src={img1} alt="" />
+          </div>
         <Nav className="absolute top-0 right-10" />
         <div className="Home_Right_info absolute top-45 left-0">
           <div className="info1 p-2 shadow-[0_8px_30px_rgba(0,0,0,0.1)] rounded-lg text-left flex  bg-[#FFFFFF] ">
