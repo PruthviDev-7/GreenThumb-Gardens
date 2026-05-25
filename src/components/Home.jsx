@@ -58,7 +58,7 @@ function Home() {
         }}
       >
         <Nav className="absolute top-0 right-10" />
-        <div className="Home_Right_info absolute top-50 left-0">
+        <div className="Home_Right_info absolute top-45 left-0">
           <div className="info1 p-2 shadow-[0_8px_30px_rgba(0,0,0,0.1)] rounded-lg text-left flex  bg-[#FFFFFF] ">
             <div className="flex flex-col gap-1 justify-center">
               <h2 className="font-bold text-sm tracking-tight leading-none ">
@@ -70,7 +70,7 @@ function Home() {
             </div>
             <img className="h-10 w-fit" src={img3} alt="Workshop" />
           </div>
-          <div className="flex gap-2.5 mt-2">
+          <div className="flex gap-6 mt-4">
             <div className="info2 p-3 bg-[#EBEBEB] w-fit  rounded-lg">
               <div>
                 <h2 className="font-bold text-sm tracking-tight leading-none">
