@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import img1 from "../assets/page2-1.png";
 import img2 from "../assets/page2-2.png";
 import img3 from "../assets/page2-3.png";
@@ -7,9 +9,37 @@ import img5 from "../assets/page2-5.png";
 import "../index.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Nav from "./Nav";
+
 function Home() {
+  gsap.registerPlugin(useGSAP);
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
+        tl.from(".Home_left", {
+          opacity: 0,
+          x: -100,
+          duration: 0.8,
+        });
+        tl.from(
+          ".Home_Right_info",
+          {
+            opacity: 0,
+            y: 100,
+            delay: 0.5,
+            duration: 1.5,
+          },
+          "-=0.4",
+        );
+    },
+    
+  );
   return (
-    <div className="Home_main w-full h-screen pt-15 flex relative overflow-hidden">
+    <div
+      ref={container}
+      className="Home_main w-full h-screen pt-15 flex relative overflow-hidden"
+    >
       <div className="Home_left h-full w-[40%] flex flex-col items-center gap-25">
         <div className="H-left-Hedline flex flex-col items-center">
           <div>
