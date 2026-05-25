@@ -9,7 +9,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Nav from "./Nav";
 function Home() {
   return (
-    <div className="Home_main w-full h-screen pt-20 flex relative overflow-hidden">
+    <div className="Home_main w-full h-screen pt-15 flex relative overflow-hidden">
       <div className="Home_left h-full w-[40%] flex flex-col items-center gap-25">
         <div className="H-left-Hedline flex flex-col items-center">
           <div>
