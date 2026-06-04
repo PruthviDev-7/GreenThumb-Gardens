@@ -9,6 +9,7 @@ import img5 from "../assets/page2-5.png";
 import "../index.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Nav from "./Nav";
+import { Link } from "react-router-dom";
 
 function Home() {
   gsap.registerPlugin(useGSAP);
@@ -77,9 +78,11 @@ function Home() {
               Shop Now{" "}
               <FaArrowRightLong className="inline ml-0.5 text-lg font-extralight" />
             </button>
-            <button className=" cursor-pointer py-2 text-sm px-10 border border-gray-400 text-center rounded-full ">
-              About Us
-            </button>
+            <Link to="/nature-video">
+              <button className=" cursor-pointer py-2 text-sm px-10 border border-gray-400 text-center rounded-full ">
+                About Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
