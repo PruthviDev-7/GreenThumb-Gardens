@@ -5,8 +5,10 @@ import Nav from "./Nav";
 import Bleft from "../assets/video-thumnel.jpg";
 import Bright from "../assets/bootom-banner.jpg";
 import Video1 from "../assets/Plant-Cinematic-Video.mp4";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate();
   const [isPlaying, setIsPlaying] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const videoRef = useRef(null);
@@ -44,9 +46,20 @@ function About() {
           </div>
           <Nav className="absolute  top-0 right-0 text-white" />
         </div>
-        <h1 className="text-white text-4xl uppercase font-bold tracking-wider mb-3">
-          About Us
-        </h1>
+        <div className="relative group flex items-center gap-6 w-fit mb-3">
+          <h1 
+            onClick={() => navigate('/nature-video')}
+            className="text-white text-4xl uppercase font-bold tracking-wider cursor-pointer hover:text-green-100 hover:scale-105 transition-all duration-300 origin-left m-0"
+          >
+            About Us
+          </h1>
+          <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-[-15px] group-hover:translate-x-0 pointer-events-none">
+            <span className="bg-black/50 backdrop-blur-md text-white text-sm px-4 py-2 rounded-full whitespace-nowrap shadow-lg border border-white/30 flex items-center gap-2">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              Click to view our Nature Story
+            </span>
+          </div>
+        </div>
       </div>
       <div className="bottom w-full h-[60%] p-12">
         <div className="bootom-top flex gap-32">
@@ -77,7 +90,7 @@ function About() {
                 </button>
               </>
             )}
-            
+
             <video ref={videoRef} className="w-full h-full object-cover" onEnded={() => setIsPlaying(false)}>
               <source src={Video1} type="video/mp4" />
             </video>

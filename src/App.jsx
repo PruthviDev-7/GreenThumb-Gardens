@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Plant from "./components/PlantCarousel";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import NatureVideo from "./components/NatureVideo";
 
 function App() {
   const [isWelcomeVisible, setIsWelcomeVisible] = useState(true);
@@ -20,6 +21,7 @@ function App() {
         <Route path="/plants" element={<Plant />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/nature-video" element={<NatureVideo />} />
       </Routes>
     </Router>
   );
