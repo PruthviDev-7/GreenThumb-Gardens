@@ -14,10 +14,10 @@ function Welcome({ onComplete }) {
       }
     });
     tl.fromTo(container.current, 
-      { opacity: 0, scale: 0.5 }, 
-      { opacity: 1, scale: 1, duration: 1,}
+      { opacity: 0, scale: 2 }, 
+      { opacity: 1, scale: 1, duration: 1.2, ease: "power3.out" }
     )
-    .to(container.current, { opacity: 0, duration: 0.5, delay: 0.5});
+    .to(container.current, { opacity: 0, duration: 0.8, delay: 0.5, ease: "power2.inOut" });
     
   }, { scope: container });
   return (

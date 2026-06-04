@@ -22,9 +22,9 @@ function Home() {
         //   x: -100,
         //   duration: 0.8,
         // });
-        gsap.from(".Home_Right_imgg img", {
+        tl.from(".Home_Right_imgg img", {
           opacity: 0,
-          y: 100,
+          y: 350,
           scale: 0,
           duration: 2,
         },);
@@ -33,7 +33,7 @@ function Home() {
           {
             opacity: 0,
             y: 150,
-            duration: 2,
+            duration: 3,
           },
           
         );  
@@ -88,9 +88,9 @@ function Home() {
           <div className="Home_Right_imgg absolute top-0 right-0 h-full w-[60%]">
             <img className="h-full w-full object-cover" src={img1} alt="" />
           </div>
-        <Nav className="absolute top-0 right-10" />
+        <Nav className="absolute text-black top-0 right-10" />
         <div className="Home_Right_info absolute top-45 left-0">
-          <div className="info1 p-2 shadow-[0_8px_30px_rgba(0,0,0,0.1)] rounded-lg text-left flex  bg-[#FFFFFF] ">
+          <div className="info1 p-2 shadow-[0_8px_30px_rgba(0,0,0,0.1)] rounded-lg text-left flex  bg-[#FFFFFF]">
             <div className="flex flex-col gap-1 justify-center">
               <h2 className="font-bold text-sm tracking-tight leading-none ">
                 Organic Gardening Workshop
