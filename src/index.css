@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: 'SortsMillGoudy';
-    src: url('/src/assets/SortsMillGoudy-Regular.ttf') format('truetype');
+    src: url('./assets/SortsMillGoudy-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'SortsMillGoudy';
-    src: url('/src/assets/SortsMillGoudy-Italic.ttf') format('truetype');
+    src: url('./assets/SortsMillGoudy-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
