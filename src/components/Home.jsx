@@ -6,6 +6,7 @@ import img2 from "../assets/page2-2.png";
 import img3 from "../assets/page2-3.png";
 import img4 from "../assets/page2-4.png";
 import img5 from "../assets/page2-5.png";
+import logo from "../assets/logo.png";
 import "../index.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Nav from "./Nav";
@@ -48,7 +49,8 @@ function Home() {
     >
       <div className="Home_left h-full w-[40%] flex flex-col items-center gap-25">
         <div className="H-left-Hedline flex flex-col items-center">
-          <div>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="GreenThumb Gardens Logo" className="h-12 w-12 object-contain rounded-full shadow-sm" />
             <h2 className="font-black  text-3xl leading-tight text-[#4A7A3C] inline">
               GreenThumb Gardens
             </h2>
