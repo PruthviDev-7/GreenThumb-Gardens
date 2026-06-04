@@ -1,3 +1,7 @@
+import monstera from '../assets/monstera.png.png';
+import peaceLily from '../assets/PeaceLily.png.png';
+import snakePlant from '../assets/SnakePlant.png.png';
+
 export const plants = [
   {
     id: 1,
@@ -6,8 +10,8 @@ export const plants = [
     price: "Rs. 3999",
     description: "A Stylish Tropical Plant With Iconic Split Leaves That Brings Instant Luxury And Freshness To Any Space.",
     benefits: ["Air purifying", "Fast growing"],
-    mainImage: "/src/assets/monstera.png.png",
-    thumbImage: "/src/assets/monstera.png.png"
+    mainImage: monstera,
+    thumbImage: monstera
   },
   {
     id: 2,
@@ -16,8 +20,8 @@ export const plants = [
     price: "Rs. 2599",
     description: "A Low-Maintenance Indoor Plant Known For Purifying Air And Adding Elegance To Any Room.",
     benefits: ["Air purifying", "Low light tolerant"],
-    mainImage: "/src/assets/PeaceLily.png.png",
-    thumbImage: "/src/assets/PeaceLily.png.png"
+    mainImage: peaceLily,
+    thumbImage: peaceLily
   },
   {
     id: 3,
@@ -26,7 +30,7 @@ export const plants = [
     price: "Rs. 1999",
     description: "One Of The Toughest Plants — Grows Easily, Improves Air Quality, And Thrives With Minimal Care.",
     benefits: ["Air purifying", "Drought tolerant"],
-    mainImage: "/src/assets/SnakePlant.png.png",
-    thumbImage: "/src/assets/SnakePlant.png.png"
+    mainImage: snakePlant,
+    thumbImage: snakePlant
   }
 ];
