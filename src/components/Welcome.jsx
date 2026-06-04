@@ -7,6 +7,15 @@ import '../index.css'
 function Welcome({ onComplete }) {
   gsap.registerPlugin(useGSAP);
   const container = useRef();
+  
+  // Hide scrollbars during welcome animation
+  React.useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+  
   useGSAP(() => {
     const tl = gsap.timeline({
       onComplete: () => {
