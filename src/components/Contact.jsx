@@ -22,7 +22,8 @@ function Contact() {
         <div className="w-full md:w-1/2 flex flex-col z-10 ">
           
           {/* Top Right: Nav Area */}
-          <div className="w-full flex justify-end pt-8 pr-8 ">
+          <div className="w-full flex justify-end pt-8 pr-8 relative">
+            <img src={LeafBg} alt="Leaf Background" className="absolute top-0 right-0 w-[300px] md:w-[450px] -z-10 pointer-events-none" />
             <div className="relative z-10 flex justify-end">
               <Nav className="mt-1.5"/>
             </div>
