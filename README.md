@@ -109,25 +109,38 @@ Make sure you have [Node.js](https://nodejs.org) (v18 or higher recommended) ins
 
 ---
 
-## 📹 Video Walkthrough & Demo
+## 📷 Project Screenshots & Preview
 
-*Here is a visual demonstration of the GreenThumb Gardens application in action, showing the entrance animations, plant carousel transitions, and interactive video playback.*
-
-<!-- USER_VIDEO_START -->
-> [!NOTE]
-> **To add your demo video:** Replace the placeholder below with your `.mp4` file or upload your walkthrough video to YouTube/Loom and update the video link.
+*Here are preview images of the GreenThumb Gardens application in action, highlighting the design aesthetics, landing layout, and plant display pages.*
 
 <div align="center">
-  <video width="100%" style="max-width: 800px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);" controls poster="src/assets/video-thumnel.jpg">
-    <source src="src/assets/Plant-Cinematic-Video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <table>
+    <tr>
+      <td width="50%" align="center">
+        <b>🎭 Welcome Splash Screen</b><br/>
+        <img src="src/assets/Wellcome.png" width="100%" style="border-radius: 8px; border: 1px solid #ddd;" alt="Welcome Screen"/>
+      </td>
+      <td width="50%" align="center">
+        <b>🏡 Landing Homepage</b><br/>
+        <img src="src/assets/page2-1.png" width="100%" style="border-radius: 8px; border: 1px solid #ddd;" alt="Homepage"/>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <b>🌿 Premium Plant Showcase</b><br/>
+        <img src="src/assets/monstera.png.png" width="100%" style="border-radius: 8px; border: 1px solid #ddd;" alt="Plant Carousel"/>
+      </td>
+      <td width="50%" align="center">
+        <b>📖 Cinematic About Us Banner</b><br/>
+        <img src="src/assets/bg-about.jpg" width="100%" style="border-radius: 8px; border: 1px solid #ddd;" alt="About Screen"/>
+      </td>
+    </tr>
+  </table>
 </div>
-<!-- USER_VIDEO_END -->
 
-### Alternative Video Links (Loom/YouTube):
-- [🔗 View Full HD Walkthrough on Loom](https://loom.com) *<!-- Add your URL here -->*
-- [🔗 View Project Demo on YouTube](https://youtube.com) *<!-- Add your URL here -->*
+> [!TIP]
+> **To update the screenshots:** You can replace the local file paths (`src/assets/...`) in the HTML table above with your own custom screenshot images or upload them to your repository/hosting service and use the hosted image URLs.
+
 
 ---
 
