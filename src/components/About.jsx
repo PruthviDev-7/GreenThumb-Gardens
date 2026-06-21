@@ -47,7 +47,7 @@ function About() {
           <Nav className="absolute  top-0 right-0 text-white" />
         </div>
         <div className="relative group flex items-center gap-6 w-fit mb-3">
-          <h1 
+          <h1
             onClick={() => navigate('/nature-video')}
             className="text-white text-4xl uppercase font-bold tracking-wider cursor-pointer hover:text-green-100 hover:scale-105 transition-all duration-300 origin-left m-0"
           >

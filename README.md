@@ -1,16 +1,150 @@
-# React + Vite
+# 🌱 GreenThumb Gardens
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Where Nature Greets You with a Smile.*
 
-Currently, two official plugins are available:
+[![React Version](https://img.shields.io/badge/React-v19.2-blue?logo=react&logoColor=white&color=007ACC)](https://react.dev)
+[![Vite Version](https://img.shields.io/badge/Vite-v8.0-blue?logo=vite&logoColor=white&color=646CFF)](https://vitejs.dev)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.3-blue?logo=tailwindcss&logoColor=white&color=06B6D4)](https://tailwindcss.com)
+[![GSAP Animations](https://img.shields.io/badge/GSAP-v3.15-green?logo=greensock&logoColor=white&color=88CE02)](https://greensock.com/gsap/)
+[![JavaScript](https://img.shields.io/badge/ES6-JavaScript-yellow?logo=javascript&logoColor=black&color=F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?color=4A7A3C)](https://opensource.org/licenses/MIT)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📖 Introduction
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**GreenThumb Gardens** is a premium, highly interactive nursery and organic gardening showcase web application. Built using **React 19**, **Vite**, **Tailwind CSS v4**, and animated with **GSAP (GreenSock Animation Platform)**, the platform delivers a modern, visually stunning experience designed to inspire plant lovers, teach sustainable organic practices, and display high-end plant collections.
 
-## Expanding the ESLint configuration
+From a smooth, cinematic splash intro to dynamic diagonal slide transitions in the plant showcase carousel, every transition is tuned to offer a premium, premium feel.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌟 Core Features
+
+- 🎭 **Cinematic Welcome Screen**: A GSAP-animated splash screen that fades and scales out gracefully as the user lands on the website.
+- 🏡 **Aesthetic Landing Page**: Features a grid showing upcoming events (Organic Gardening Workshop, Flower Festival, Crop Festival), quick action buttons, and beautiful layouts.
+- 🌿 **Interactive Plant Carousel**: A premium plant catalog showing Monstera Deliciosa, Peace Lily, and Snake Plant. It utilizes GSAP timeline animations for text, imagery, and benefit list transitions.
+- 🎬 **Nature Story Page**: A dedicated storytelling route featuring a full-width background video (`Netural30sec.mp4`) and an overlaid bold message about connecting with nature.
+- 📖 **Cinematic About Us Section**: Features an interactive in-page cinematic video player (`Plant-Cinematic-Video.mp4`) with smooth controls, along with a narrative about the brand's vision.
+- 📞 **Specialty Information & Action Page**: Highlights the nursery's dedication to chemical-free growing practices, local climate-adapted flora, and quick links to the store.
+
+---
+
+## 📂 Project Directory Structure
+
+```directory
+GreenThumb_Gardens/
+├── public/                 # Static assets (favicons, etc.)
+├── src/
+│   ├── assets/             # Images, logos, video files (mp4) and fonts
+│   │   ├── logo.png        # Circular brand logo
+│   │   ├── bg-about.jpg    # Banner for the about section
+│   │   ├── monstera.png.png
+│   │   ├── PeaceLily.png.png
+│   │   ├── SnakePlant.png.png
+│   │   ├── Netural30sec.mp4          # Short nature story video
+│   │   └── Plant-Cinematic-Video.mp4 # About Us page video
+│   ├── components/         # React functional components
+│   │   ├── Welcome.jsx     # GSAP Splash intro
+│   │   ├── Home.jsx        # Landing homepage with animations
+│   │   ├── PlantCarousel.jsx # Custom GSAP plant slider
+│   │   ├── NatureVideo.jsx # Full-screen nature loop
+│   │   ├── About.jsx       # About details & in-line video player
+│   │   ├── Contact.jsx     # Bottom banner & special qualities section
+│   │   └── Nav.jsx         # Glassmorphic, floating router navigation
+│   ├── Data/
+│   │   └── plantsData.js   # Centralized data model for plants
+│   ├── App.jsx             # React App component defining routing (React Router v7)
+│   ├── index.css           # Global custom CSS & Tailwind entry point
+│   └── main.jsx            # Application entry point
+├── package.json            # Scripts and dependency declarations
+├── vite.config.js          # Vite build config
+└── tailwind.config.js      # Tailwind configurations
+```
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend Core**: [React 19](https://react.dev) & [Vite](https://vite.dev)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com) (utility-first, modern responsive layouts)
+- **Animation System**: [GreenSock (GSAP)](https://greensock.com/gsap/) & [@gsap/react](https://greensock.com/react/) for high-performance timelines
+- **Routing**: [React Router DOM v7](https://reactrouter.com/) for single page application routing
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/) (Lucide, Font Awesome, etc.)
+
+---
+
+## 🚀 Getting Started & Installation
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org) (v18 or higher recommended) installed.
+
+### Installation Steps
+
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+   cd GreenThumb_Gardens
+   ```
+
+2. **Install Dependencies**
+   Using `npm`:
+   ```bash
+   npm install
+   ```
+
+3. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to `http://localhost:5173` (or the port specified in the terminal).
+
+4. **Build for Production**
+   ```bash
+   npm run build
+   ```
+   The built static assets will be located in the `dist/` directory.
+
+---
+
+## 📹 Video Walkthrough & Demo
+
+*Here is a visual demonstration of the GreenThumb Gardens application in action, showing the entrance animations, plant carousel transitions, and interactive video playback.*
+
+<!-- USER_VIDEO_START -->
+> [!NOTE]
+> **To add your demo video:** Replace the placeholder below with your `.mp4` file or upload your walkthrough video to YouTube/Loom and update the video link.
+
+<div align="center">
+  <video width="100%" style="max-width: 800px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);" controls poster="src/assets/video-thumnel.jpg">
+    <source src="src/assets/Plant-Cinematic-Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<!-- USER_VIDEO_END -->
+
+### Alternative Video Links (Loom/YouTube):
+- [🔗 View Full HD Walkthrough on Loom](https://loom.com) *<!-- Add your URL here -->*
+- [🔗 View Project Demo on YouTube](https://youtube.com) *<!-- Add your URL here -->*
+
+---
+
+## 🎨 Design System & Animation Details
+
+### Color Palette
+- **Primary Green**: `#4A7A3C` (Fresh, organic accents)
+- **Dark Forest**: `#143d2c` to `#0c261b` (Gradient backgrounds in the Plant Carousel)
+- **Eco Sage**: `#508B63` (Accent backgrounds on cards and panels)
+- **Minimalist Base**: `#F8F9FA` & `#EBEBEB` (For clean, airy light-mode screens)
+
+### GSAP Animation Specifications
+- **Splash Screen**: Scaling down from `scale: 2` to `scale: 1` over `1.2s` with `power3.out` ease, followed by a soft opacity fade-out.
+- **Home Entrance**: The plant element slides up `350px` vertically alongside a slow opacity fade-in on the text panels.
+- **Carousel Diagonal Slide**: On change, the current plant image scales down and slides in diagonally (`x: 300`, `y: 200`, `scale: 0.15`) using `power3.out` ease to simulate depth.
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

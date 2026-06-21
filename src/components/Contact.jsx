@@ -53,7 +53,7 @@ function Contact() {
               <button className="bg-black text-white px-7 py-3 rounded-full font-medium text-sm flex items-center gap-2 hover:bg-gray-800 transition-colors">
                 Shop Now <span className="text-base leading-none">→</span>
               </button>
-              <button 
+              <button
                 onClick={() => navigate('/nature-video')}
                 className="border border-black text-black px-7 py-3 rounded-full font-medium text-sm hover:bg-black hover:text-white transition-colors"
               >
@@ -93,7 +93,7 @@ function Contact() {
                 Our plants bloom beautifully all year round — from
                 vibrant spring flowers to lush winter greens.
               </p>
-              <button 
+              <button
                 onClick={() => navigate('/nature-video')}
                 className="bg-white text-black px-6 py-2 rounded-full text-[13px] font-semibold hover:bg-gray-200 transition-colors"
               >

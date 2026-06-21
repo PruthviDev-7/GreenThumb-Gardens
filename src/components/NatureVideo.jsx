@@ -10,10 +10,10 @@ function NatureVideo() {
         <div className="absolute top-8 right-12 z-20">
           <Nav />
         </div>
-        <video 
-          className="w-full h-full object-cover" 
-          autoPlay 
-          loop 
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
           playsInline
         >
           <source src={NeturalVideo} type="video/mp4" />
@@ -31,10 +31,10 @@ function NatureVideo() {
           Where Every Leaf Tells A Story.
         </h2>
         <p className="text-gray-600 max-w-4xl text-base md:text-lg leading-relaxed">
-          Welcome to our garden — a peaceful green escape where nature is celebrated, 
-          nurtured, and shared with everyone who walks in. What started as a small idea 
-          rooted in love for plants has grown into a space filled with beauty, learning, and 
-          joy. Our goal is simple: to help people reconnect with nature, one plant and one 
+          Welcome to our garden — a peaceful green escape where nature is celebrated,
+          nurtured, and shared with everyone who walks in. What started as a small idea
+          rooted in love for plants has grown into a space filled with beauty, learning, and
+          joy. Our goal is simple: to help people reconnect with nature, one plant and one
           moment at a time.
         </p>
       </div>
